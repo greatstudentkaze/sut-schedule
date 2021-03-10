@@ -1,0 +1,57 @@
+@import "../variables";
+
+.subject-info {
+  position: relative;
+
+  padding: 20px;
+  padding-left: 30px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: $black;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: calc(100% - 25px * 2);
+
+    background-color: $gray-500;
+  }
+}
+
+.subject-info__type {
+  max-width: min-content;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 3px 8px;
+
+  font-size: 12px;
+  color: $white;
+  white-space: nowrap;
+
+  background-color: $black;
+}
+
+.subject-info__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subject-info__teacher {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.subject-info__classroom {
+  margin: 0;
+
+}

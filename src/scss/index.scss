@@ -2,10 +2,13 @@
 @import "../../node_modules/normalize.css/normalize";
 
 // Basic styles and utility blocks
-@import "src/scss/base";
-@import "src/scss/blocks/visually-hidden";
-@import "src/scss/blocks/container";
-@import "src/scss/blocks/button";
+@import "base";
+@import "blocks/visually-hidden";
+@import "blocks/container";
+@import "blocks/button";
 
 // Blocks
-@import "src/scss/blocks/page";
+@import "blocks/page";
+@import "blocks/subject";
+@import "blocks/subject-info";
+
