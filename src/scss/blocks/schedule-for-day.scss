@@ -1,0 +1,17 @@
+@import "../variables";
+
+.schedule-for-day {
+
+}
+
+.schedule-for-day__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 20px;
+
+  //color: $white;
+  text-align: center;
+
+  //background-color: $black;
+  border: 1px solid $gray-500;
+}

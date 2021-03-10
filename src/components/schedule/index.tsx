@@ -37,10 +37,10 @@ const Schedule = () => {
   }, []);
 
   return (
-    <div className="container">
-      <h2>Расписание занятий на неделю</h2>
+    <section className="section container">
+      <h2 className="section__lead">Расписание занятий на неделю</h2>
       <ScheduleForWeek schedule={schedule} />
-    </div>
+    </section>
   );
 };
 

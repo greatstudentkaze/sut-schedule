@@ -26,12 +26,12 @@ type Props = {
 
 const ScheduleForWeek = ({ schedule }: Props) => {
   return (
-    <ul>
+    <ul className="schedule-for-week">
       {
         !schedule.length
           ? 'Загрузка...'
           : schedule.map(item =>
-            <li>
+            <li key={item.day} className="schedule-for-week__item">
               <ScheduleForDay data={item} />
             </li>
           )

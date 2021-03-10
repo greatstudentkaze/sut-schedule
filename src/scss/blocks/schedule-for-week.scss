@@ -1,0 +1,11 @@
+@import "../mixins";
+
+.schedule-for-week {
+  @include reset-list;
+}
+
+.schedule-for-week__item {
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}

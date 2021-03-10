@@ -29,10 +29,10 @@ const ScheduleForDay = ({ data }: Props) => {
 
   return (
     <article className="schedule-for-day">
-      <h3 className="schedule-for-day__title">{day} <b>31 марта</b></h3>
+      <h3 className="schedule-for-day__title">{day} — 31 марта</h3>
       {
         lessons.length
-          ? lessons.map(lesson => <Subject data={lesson} />)
+          ? lessons.map(lesson => <Subject key={lesson.time.start} data={lesson} />)
           : 'Занятий нет'
       }
     </article>
