@@ -1,0 +1,11 @@
+// Normalize
+@import "../../node_modules/normalize.css/normalize";
+
+// Basic styles and utility blocks
+@import "src/scss/base";
+@import "src/scss/blocks/visually-hidden";
+@import "src/scss/blocks/container";
+@import "src/scss/blocks/button";
+
+// Blocks
+@import "src/scss/blocks/page";

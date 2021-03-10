@@ -1,0 +1,59 @@
+@import "../variables";
+
+.button {
+  display: inline-block;
+  padding: 0 20px;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+
+  background-color: $black;
+  border: 1px solid $transparent;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+
+  &:enabled:hover {
+    color: $black;
+
+    background-color: $white;
+    border-color: $black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue;
+
+    &:hover {
+      border-color: $transparent;
+    }
+  }
+
+  &:enabled:active {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+
+  &:disabled {
+    color: $gray-300;
+
+    background-color: $gray-500;
+    border-color: $gray-500;
+
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../variables";
+
+.page,
+.page__body {
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-family: $font-primary;
+  color: $black;
+
+  background-color: $white;
+}
