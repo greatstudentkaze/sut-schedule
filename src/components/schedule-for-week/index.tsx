@@ -13,11 +13,14 @@ export interface IScheduleItem {
     start: string,
     end: string,
   },
+  id: string,
 }
 
 export interface IDaySchedule {
   day: DayOfTheWeekType,
   lessons: IScheduleItem[],
+  date: string,
+  id: string,
 }
 
 type Props = {
@@ -25,13 +28,14 @@ type Props = {
 }
 
 const ScheduleForWeek = ({ schedule }: Props) => {
+
   return (
     <ul className="schedule-for-week">
       {
         !schedule.length
           ? 'Загрузка...'
           : schedule.map(item =>
-            <li key={item.day} className="schedule-for-week__item">
+            <li key={item.id} className="schedule-for-week__item">
               <ScheduleForDay data={item} />
             </li>
           )
